@@ -3,6 +3,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.swarlabs.com" }],
+        destination: "https://swarlabs.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   experimental: {
     proxyClientMaxBodySize: "20mb",
     viewTransition: true,

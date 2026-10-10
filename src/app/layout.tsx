@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SITE_DESCRIPTION, SITE_URL } from "@/lib/seo";
 
 const outfit = Outfit({
   variable: "--font-inter",
@@ -14,11 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  applicationName: "Swarlabs",
+  // Only public marketing pages explicitly opt in to search indexing.
+  robots: { index: false, follow: false },
   title: {
     default: "Swarlabs",
     template: "%s | Swarlabs"
   },
-  description: "AI-powered text-to-speech platform with high-quality Indian language support",
+  description: SITE_DESCRIPTION,
   icons: {
     icon: [
       { url: "/logo-light.svg", media: "(prefers-color-scheme: light)", type: "image/svg+xml", sizes: "38x38" },

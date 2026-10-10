@@ -259,14 +259,13 @@ export function HomePageView() {
               </div>
 
               <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-[#4b1724] sm:mt-8 sm:text-6xl lg:text-7xl">
-                Bring useful tools together.
+                AI speech and language tools, together.
               </h1>
 
               <p className="mt-5 max-w-3xl text-base leading-7 text-[#6d4c53] sm:mt-6 sm:text-xl sm:leading-8">
-                Swarlabs brings text-to-speech, speech-to-text, translation, and extraction into
-                one connected platform. Built for real workflows, it helps teams create,
-                transform, and ship content without switching tools. An evolving system designed
-                to grow with every new useful capability.
+                Create AI voiceovers, transcribe audio, translate text, and extract content from
+                documents in one workspace. Swarlabs brings speech and language tools together
+                for creators and teams working with Indian languages and multilingual content.
               </p>
 
               <div className="mt-8 grid w-full max-w-md gap-3 sm:mt-9 sm:flex sm:max-w-none sm:flex-wrap sm:items-center sm:gap-4">
